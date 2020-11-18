@@ -4,13 +4,14 @@ Terraform module for a heroku application with database addon.
 ## Example
 ```hcl-terraform
 module "heroku-app-db" {
-  source = "github.com/bluedigitize/heroku-app-db"
-  name = "production-myapp"
+  source = "github.com/bluedigitize/terraform-heroku-app-db"
+  name = "testing-my-app"
   region = "eu"
-  database = "postgres"
+  database = "heroku-postgresql"
   price_plan = "hobby-dev"
   stack = "container"
 }
+
 ```
 
 ## Inputs
