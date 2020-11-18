@@ -10,6 +10,7 @@ module "heroku-app-db" {
   database = "heroku-postgresql"
   price_plan = "hobby-dev"
   stack = "container"
+  org_name = "null"
 }
 
 ```
@@ -26,6 +27,7 @@ module "heroku-app-db" {
 
 `stack` - default(container), specify the stack.
   
+`org_name` - default(null), specify a team to deploy to, if null it will deploy to the provider you are using
 ## Outputs
 `database_name` - name of the database
 

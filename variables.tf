@@ -20,3 +20,8 @@ variable "price_plan" {
   type = string
   default = "hobby-dev"
 }
+
+variable "org_name" {
+  default = "null"
+  type = string
+}
