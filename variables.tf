@@ -22,6 +22,6 @@ variable "price_plan" {
 }
 
 variable "org_name" {
-  default = "null"
+  default = ""
   type = string
 }
