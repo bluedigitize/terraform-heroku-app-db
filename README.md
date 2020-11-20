@@ -21,13 +21,13 @@ module "heroku-app-db" {
 
 `region` - required, specify the region, eu or na
 
-`database` - default(postgres), specify what database you'd like to use
+`database` - default("postgres"), specify what database you'd like to use
 
-`price_plan` - default(hobby-dev), specify a price plan, hobby-dev is the free tier
+`price_plan` - default("hobby-dev"), specify a price plan, hobby-dev is the free tier
 
-`stack` - default(container), specify the stack.
+`stack` - default("container"), specify the stack.
   
-`org_name` - default(null), specify a team to deploy to, if null it will deploy to the provider you are using
+`org_name` - default(""), specify a team to deploy to, if null it will deploy to the provider you are using
 ## Outputs
 `database_name` - name of the database
 
